@@ -1,0 +1,121 @@
+#FAQ {
+    background-color: #F5F8F3;
+    padding: 20% 20% 10% 20%;
+    margin-top: -10%; /* In order to have half beige half white background at pricing tab */
+}
+
+.groupTextTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.groupTitle {
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+}
+
+.groupTitle, .groupText {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupText {
+    padding-bottom: 5%;
+    font-size: 16px;
+}
+
+#questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.questionsFour {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#q1 {
+    margin-right: 10px;
+}
+
+.questionBar {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom:20px;
+    justify-content: space-between;
+}
+
+.questionText {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; /* To display the + on the right */
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Hiding the marker */
+.questionBar::marker {
+    content: "";
+}
+
+/* Hiding the checkbox */
+input[type="checkbox"] {
+    display:none;
+}
+
+/* Styling for question text before content */
+.questionText::before{
+    content: "+";
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+/* Styling for question bar hover effect */
+.questionBar:hover {
+    color: #3866FF;
+}
+
+.answer {
+    max-height: 0px;
+    overflow: hidden; /* Hiding the content */
+    color:#060606;
+    transition: max-height 0.5s;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+/* Styling for checked checkbox and answer display */
+.questionBar input[type="checkbox"]:checked + label + .answer {
+    max-height: 400px;
+    overflow: visible;
+    transition: 0.5s ease-in;
+    color: #555555;
+    padding-bottom: 20px;
+}
+
+/* Styling for checked checkbox and changing content i.e unchecking */
+.questionBar input[type="checkbox"]:checked + label::before {
+    content: "-";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Responsive design for screens with a maximum width of 500px */
+@media only screen and (max-width: 500px) {
+    #questions {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+    }
+}

@@ -1,0 +1,56 @@
+#main {
+    /* Styling for the main container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 170px;
+    padding: 0% 20%;
+}
+
+#mainText {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    line-height: 27px;
+    font-size: 18px;
+}
+
+.mainTitle, #mainText, .buttonBlackDownload, #statistics {
+    text-align: center;
+}
+
+/* Styling for the black button */
+.buttonBlack {
+    background-color: #060606;
+    border-radius: 5px;
+    padding: 18px 37px 18px 37px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Margin for the download button */
+#download {
+    margin: 30px 0 50px;
+}
+
+/* Hover styling for the black button */
+.buttonBlack:hover {
+    background-color: #3866FF;
+}
+
+#statistics svg {
+    width: 100%;
+    height: auto;
+}
+
+.mainTitle {
+    font-size: 50px;
+}
+
+/* Responsive design for screens with a maximum width of 1200px */
+@media only screen and (max-width:1200px) {
+    .buttonBlack, .buttonBlack:hover {
+        font-size: 16px;
+    }
+}

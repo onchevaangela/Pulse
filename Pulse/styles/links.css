@@ -1,0 +1,10 @@
+/* Styling for active elements */
+.active {
+    color: #3866FF;
+}
+
+/* Styling for link elements */
+a {
+    color: #2F2F2F;
+    text-decoration: none;
+}

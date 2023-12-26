@@ -1,0 +1,52 @@
+footer {
+    background-color: #F5F8F3;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 20%;
+}
+
+.info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    font-size: 16px;
+    align-self: stretch; /* Align the container to stretch its cross-axis (height) */
+    max-width: 280px;
+}
+
+.info p, .info a, .info h3 {
+    padding-top: 15px; 
+    text-decoration: none;
+} 
+
+#copy {
+    background-color: #060606;
+    padding: 2%;
+}
+
+#copyText {
+    color: #FFFFFF;
+    font-weight: normal;
+    padding-left: 20%;
+}
+
+.logo {
+    justify-content: center;
+    padding-top: 15px;
+}
+
+/* Responsive design for screens with a maximum width of 765px */
+@media only screen and (max-width: 765px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #copyText {
+        padding-left: 0%;
+    }
+}

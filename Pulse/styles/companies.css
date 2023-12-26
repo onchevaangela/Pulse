@@ -1,0 +1,105 @@
+#companies {
+    align-items: center;
+    justify-content: center;
+    background-color: #060606;
+    margin-bottom: 5%;
+}
+
+#companyBlock {
+    padding: 5% 20%;
+}
+
+#companiesLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-right: 0;
+    flex-wrap: wrap; /* Wrap content to the next line if needed */
+}
+
+.company {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+    padding: 0 15px;
+}
+
+#usersDownloads {
+    display: flex;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+    padding: 10%;
+    justify-content: space-between;
+}
+
+#companiesTitle {
+    padding-right: 6%;
+    font-size: 30px;
+}
+
+#companiesInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#companiesInfo h3 {
+    font-size: 48px;
+    line-height: 72px;
+}
+
+#users {
+    display: flex;
+    height: 99px;
+    max-width: 417.19px;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the flex start */
+}
+
+#lineRight {
+    border-right-width: 2px; /* Creating the line */
+    border-right-style: solid;
+    border-right-color: #FFFFFF;
+    padding-right: 40px;
+}
+
+#lineLeft {
+    padding-left: 40px;
+}
+
+/* Responsive design for screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
+    #usersDownloads {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #companiesTitle {
+        font-size: 25px;
+        padding-bottom: 6%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #companiesInfo {
+        display: flex;
+        flex-direction: column; /* Change from row to column */
+        align-items: center; /* Align items in the center */
+    }
+
+    #lineRight, #lineLeft {
+        border-right: none;
+        padding: 0; /* Remove padding */
+        text-align: center; /* Center text */
+        margin-top: 10px; /* Add some space between the two blocks */
+    }
+
+    #lineRight {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,93 @@
+#insights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0% 20%;
+}
+
+#insightsGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+#insightsTitle {
+    text-align: left;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+}
+
+#insightsText {
+    text-align: left;
+    font-size: 16px;
+}
+
+hr {
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+#insightsCircles {
+    display: flex;
+    margin-top: 5%;
+}
+
+.activeUsers {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.activeUsers svg {
+    margin-right: 20px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+#insights img {
+    margin-right: 5%;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 10px 20px rgba(138, 138, 138, 0.20);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* Responsive design for screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
+    #insights {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #insightsTitle,
+    #insightsText {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #activeUsers {
+        margin-bottom: 10px;
+        justify-content: center;
+        padding-right: 4%;
+    }
+
+    #activeUsers svg {
+        margin-right: 20px;
+        width: 14px;
+        height: 14px;
+    }
+
+    #insights img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        box-shadow: 0px 10px 20px rgba(138, 138, 138, 0.20);
+        border-radius: 5px;
+        margin-bottom: 30px;
+        margin-right: 0%;
+    }
+}

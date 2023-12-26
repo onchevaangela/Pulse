@@ -1,0 +1,191 @@
+#transform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 25% 20%;
+}
+
+#transformTitle {
+  text-align: left;
+  font-size: 35px;
+}
+
+#getStarted {
+  margin-top: 5%;
+}
+
+.blueCircleText,
+.firstText,
+#transformTextTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.firstText {
+  flex-direction: row;
+}
+
+#transformBar {
+  background-color: #F2F2F2;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 15%;
+  padding: 2%;
+  overflow: visible; /* If the elements go out of borders to display the element fully */
+  align-self: center;
+  padding-bottom: 2%;
+}
+
+.getStarted {
+  margin-top: 30px;
+}
+
+.firstBar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 5%;
+  font-size: 30%;
+}
+
+.transformNumber {
+  padding-right: 10%;
+  font-size: 20px;
+}
+
+/* Styling for the first and second containers */
+.first,
+.second {
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  box-shadow: -10px 20px 20px rgba(138, 138, 138, 0.20); /* Adding shadow */
+  margin: 0 -100px;
+  margin-bottom: 4%;
+}
+
+.first {
+  margin-right: 0px; 
+}
+
+.second {
+  margin-left: 0; 
+}
+
+.transformText {
+  flex-direction: column;
+}
+
+.exploreText {
+  font-size: 14px;
+}
+
+.exploreTitle,
+.exploreText {
+  margin: 0;
+}
+
+.transformTitle {
+  font-size: 20px;
+}
+
+.infoForUsers {
+  margin-bottom: 10px;
+  justify-content: center;
+  padding-right: 4%;
+  display: flex;
+  flex-direction: row;
+}
+
+.infoForUsers svg {
+  margin-right: 20px;
+  min-width: 14px;
+  min-height: 14px;
+}
+
+/* Responsive design for screens with a maximum width of 500px */
+@media only screen and (max-width: 500px) {
+  .infoForUsers {
+    margin-bottom: 10px;
+    justify-content: flex-start; 
+    display: flex;
+    align-items: flex-start; 
+  }
+
+  .first, .second {
+    margin: 0 0px;
+  }
+}
+
+/* Responsive design for screens with a maximum width of 765px */
+@media only screen and (max-width: 765px) {
+  .firstBar {
+    font-size: 15%;
+    padding-right: 0%;
+  }
+
+  #transformBar {
+      background-color: #F2F2F2;
+      border-radius: 20px;
+      padding: 2%;
+    }
+
+    .first, .second {
+      margin: 0 0px;
+    }
+}
+
+/* Responsive design for screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
+  #transform {
+    margin-top: 15%;
+    margin-bottom: 30%;
+    flex-direction: column;
+  }
+
+  #transformBar {
+    text-align: left;
+    font-size: 2%;
+    margin-left: 0px;
+  }
+
+  .transformNumber {
+    padding-right: 4%;
+    font-size: 15px;
+  }
+  
+  .first,
+  .second {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    box-shadow: -5px 5px 5px rgba(138, 138, 138, 0.20);
+    width: auto; 
+    max-width: 300px; 
+  }
+
+  .blueCircleText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #transformTextTitle {
+    padding-bottom: 10%;
+  }
+
+  .infoForUsers svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .second {
+  margin-top: 4%;
+  }
+
+  #firstExtra {
+    margin-top: 4%;
+  }
+}

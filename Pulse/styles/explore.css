@@ -1,0 +1,57 @@
+#explore {
+    padding: 20% 20%;
+}
+
+#iconsExplore {
+    display: flex;
+    justify-content: center;
+}
+
+.iconText {
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.exploreTitle {
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+.explorePar {
+    text-decoration: underline; /* Underlining the paragraph */
+    font-size: 80%;
+    padding-top: 20px;
+}
+
+/* Responsive design for screens with a minimum width of 600px */
+@media only screen and (min-width: 600px) {
+    .iconText {
+        width: 50%;
+        padding: 2%;
+        padding-bottom: 5%;
+    }
+}
+
+/* Responsive design for screens with a minimum width of 900px */
+@media only screen and (min-width: 900px) {
+    .iconText {
+        width: 25%;
+        padding: 2%;
+        padding-bottom: 5%;
+    }
+}
+
+/* Responsive design for screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
+    #iconsExplore {
+        flex-wrap: wrap; /* Wrap content to the next line if needed */
+    }
+    #exploreText {
+        padding-bottom: 10%;
+    }
+    .explorePar {
+        padding-bottom: 20px;
+    }
+}
+
